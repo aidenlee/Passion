@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface RootViewController : UIViewController
-@property (nonatomic) NSManagedObjectContext *managedObjectContext;
+@property (nonatomic, strong) NSManagedObjectContext *managedObjectContext;
 @property (nonatomic, strong) NSMutableArray *eventsArray;
 
 - (void)addActivityWithCheckInTime:(NSDate *)checkInTime;

@@ -4,12 +4,125 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
     <scenes>
+        <!--Activity Name Modal View Controller-->
+        <scene sceneID="hkJ-Rl-Cqt">
+            <objects>
+                <viewController id="wPk-gO-mFe" customClass="ActivityNameModalViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rPQ-qd-ZjX">
+                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ulp-s7-Hgd">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="5hc-aS-cZW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Work on Projects">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="nameButtonPressed:" destination="wPk-gO-mFe" eventType="touchUpInside" id="4KQ-Ek-32E"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mS8-4O-BqD">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="Gjp-u3-FbV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Study">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="nameButtonPressed:" destination="wPk-gO-mFe" eventType="touchUpInside" id="nxw-zS-9md"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kPF-tn-jSd">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="KxK-e6-FXh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Fun Activity">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="nameButtonPressed:" destination="wPk-gO-mFe" eventType="touchUpInside" id="6Th-1x-6zv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="42H-06-yxF">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="ZOk-XZ-tjv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Sleep">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="nameButtonPressed:" destination="wPk-gO-mFe" eventType="touchUpInside" id="1DB-ux-C4o"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ydz-Ka-Jnc">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="fzI-rN-h3e"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Other">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="nameButtonPressed:" destination="wPk-gO-mFe" eventType="touchUpInside" id="WVd-vi-naZ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="mS8-4O-BqD" firstAttribute="top" secondItem="rPQ-qd-ZjX" secondAttribute="top" constant="120" id="1pK-Zo-H0n"/>
+                            <constraint firstItem="kPF-tn-jSd" firstAttribute="top" secondItem="rPQ-qd-ZjX" secondAttribute="top" constant="194" id="6ob-Af-WgU"/>
+                            <constraint firstItem="42H-06-yxF" firstAttribute="leading" secondItem="rPQ-qd-ZjX" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="9mt-AU-g9B"/>
+                            <constraint firstItem="mS8-4O-BqD" firstAttribute="leading" secondItem="rPQ-qd-ZjX" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="A1V-BJ-2wg"/>
+                            <constraint firstAttribute="trailing" secondItem="ydz-Ka-Jnc" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="Egx-cj-l59"/>
+                            <constraint firstAttribute="trailing" secondItem="mS8-4O-BqD" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="Hct-hB-4nO"/>
+                            <constraint firstAttribute="trailing" secondItem="Ulp-s7-Hgd" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="Vbr-Cs-dRq"/>
+                            <constraint firstItem="Ulp-s7-Hgd" firstAttribute="leading" secondItem="rPQ-qd-ZjX" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="Z3c-7z-NYa"/>
+                            <constraint firstAttribute="bottom" secondItem="42H-06-yxF" secondAttribute="bottom" constant="132" id="ba5-Rc-gNt"/>
+                            <constraint firstItem="kPF-tn-jSd" firstAttribute="leading" secondItem="rPQ-qd-ZjX" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="g4p-j2-Jya"/>
+                            <constraint firstItem="ydz-Ka-Jnc" firstAttribute="leading" secondItem="rPQ-qd-ZjX" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="seM-EX-VHD"/>
+                            <constraint firstItem="Ulp-s7-Hgd" firstAttribute="top" secondItem="rPQ-qd-ZjX" secondAttribute="top" constant="45" id="t3x-K0-WOV"/>
+                            <constraint firstAttribute="bottom" secondItem="ydz-Ka-Jnc" secondAttribute="bottom" constant="59" id="uJd-vT-O8I"/>
+                            <constraint firstAttribute="trailing" secondItem="kPF-tn-jSd" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="vwA-Vo-Gs9"/>
+                            <constraint firstAttribute="trailing" secondItem="42H-06-yxF" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="xTB-pa-lwC"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ck8-BP-tWt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="675" y="-542"/>
+        </scene>
         <!--Root View Controller - Check In/Out-->
         <scene sceneID="Cpw-Qt-WHd">
             <objects>
                 <viewController id="SlU-k8-YT8" customClass="RootViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jJT-zw-Q4q">
-                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fhr-j4-cqz">
@@ -42,23 +155,26 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="wBU-Gg-xN8" firstAttribute="centerX" secondItem="fhr-j4-cqz" secondAttribute="centerX" type="default" id="9Ra-WJ-VHw"/>
-                            <constraint firstAttribute="bottom" secondItem="wBU-Gg-xN8" secondAttribute="bottom" constant="206" id="RQt-n4-dSk"/>
-                            <constraint firstItem="fhr-j4-cqz" firstAttribute="centerX" secondItem="jJT-zw-Q4q" secondAttribute="centerX" type="default" id="hjY-DN-Vpe"/>
-                            <constraint firstItem="fhr-j4-cqz" firstAttribute="top" secondItem="jJT-zw-Q4q" secondAttribute="top" constant="139" id="o6Z-Ri-fap"/>
+                            <constraint firstItem="fhr-j4-cqz" firstAttribute="top" secondItem="jJT-zw-Q4q" secondAttribute="top" constant="92" id="Mbv-fa-G5K"/>
+                            <constraint firstItem="fhr-j4-cqz" firstAttribute="centerX" secondItem="jJT-zw-Q4q" secondAttribute="centerX" type="default" id="XEm-Hy-g8K"/>
+                            <constraint firstItem="wBU-Gg-xN8" firstAttribute="top" secondItem="jJT-zw-Q4q" secondAttribute="top" constant="230" id="dVv-zo-ziv"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Check In/Out" id="TAP-In-LHm"/>
+                    <connections>
+                        <segue destination="wPk-gO-mFe" kind="modal" identifier="Choose Activity Name" id="1eX-0y-Myt"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Z27-HI-DdK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="675" y="86"/>
+            <point key="canvasLocation" x="675" y="76"/>
         </scene>
         <!--Time Table View Controller - Activities-->
         <scene sceneID="bzQ-KV-ewU">
             <objects>
                 <tableViewController id="aQO-3C-tQi" customClass="TimeTableViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="Vf0-zB-taW">
-                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
@@ -115,6 +231,12 @@
         </scene>
     </scenes>
     <classes>
+        <class className="ActivityNameModalViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ActivityNameModalViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="nameButtonPressed:" candidateClass="UIButton"/>
+            </relationships>
+        </class>
         <class className="NSLayoutConstraint" superclassName="NSObject">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
         </class>
@@ -131,6 +253,6 @@
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
-        <simulatedScreenMetrics key="destination" type="retina4"/>
+        <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
 </document>

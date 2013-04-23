@@ -12,8 +12,8 @@
 
 @interface Activity : NSManagedObject
 
-@property (nonatomic, retain) NSString * name;
 @property (nonatomic, retain) NSDate * checkInTime;
 @property (nonatomic, retain) NSDate * checkOutTime;
+@property (nonatomic, retain) NSString * name;
 
 @end

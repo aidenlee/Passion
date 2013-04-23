@@ -18,10 +18,11 @@
 		07CE86771725D7AD00E4B0B6 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 07CE86761725D7AD00E4B0B6 /* Default@2x.png */; };
 		07CE86791725D7AD00E4B0B6 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 07CE86781725D7AD00E4B0B6 /* Default-568h@2x.png */; };
 		07CE867C1725D7AD00E4B0B6 /* Passion.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 07CE867A1725D7AD00E4B0B6 /* Passion.xcdatamodeld */; };
-		07CE86841725D83800E4B0B6 /* Activity.m in Sources */ = {isa = PBXBuildFile; fileRef = 07CE86831725D83800E4B0B6 /* Activity.m */; };
 		07CE86861725D85B00E4B0B6 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07CE86851725D85B00E4B0B6 /* MainStoryboard.storyboard */; };
 		07CE86891725D90500E4B0B6 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07CE86881725D90500E4B0B6 /* RootViewController.m */; };
 		07CE868C1725DA0200E4B0B6 /* TimeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07CE868B1725DA0200E4B0B6 /* TimeTableViewController.m */; };
+		07D9044717260340006F5AE9 /* ActivityNameModalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07D9044617260340006F5AE9 /* ActivityNameModalViewController.m */; };
+		07D9044A17261891006F5AE9 /* Activity.m in Sources */ = {isa = PBXBuildFile; fileRef = 07D9044917261891006F5AE9 /* Activity.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,13 +41,15 @@
 		07CE86761725D7AD00E4B0B6 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		07CE86781725D7AD00E4B0B6 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		07CE867B1725D7AD00E4B0B6 /* Passion.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Passion.xcdatamodel; sourceTree = "<group>"; };
-		07CE86821725D83800E4B0B6 /* Activity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Activity.h; sourceTree = "<group>"; };
-		07CE86831725D83800E4B0B6 /* Activity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Activity.m; sourceTree = "<group>"; };
 		07CE86851725D85B00E4B0B6 /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = MainStoryboard.storyboard; path = ../MainStoryboard.storyboard; sourceTree = "<group>"; };
 		07CE86871725D90500E4B0B6 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
 		07CE86881725D90500E4B0B6 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 		07CE868A1725DA0200E4B0B6 /* TimeTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeTableViewController.h; sourceTree = "<group>"; };
 		07CE868B1725DA0200E4B0B6 /* TimeTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimeTableViewController.m; sourceTree = "<group>"; };
+		07D9044517260340006F5AE9 /* ActivityNameModalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActivityNameModalViewController.h; sourceTree = "<group>"; };
+		07D9044617260340006F5AE9 /* ActivityNameModalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActivityNameModalViewController.m; sourceTree = "<group>"; };
+		07D9044817261891006F5AE9 /* Activity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Activity.h; sourceTree = "<group>"; };
+		07D9044917261891006F5AE9 /* Activity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Activity.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,15 +99,17 @@
 			isa = PBXGroup;
 			children = (
 				07CE86851725D85B00E4B0B6 /* MainStoryboard.storyboard */,
+				07D9044517260340006F5AE9 /* ActivityNameModalViewController.h */,
+				07D9044617260340006F5AE9 /* ActivityNameModalViewController.m */,
 				07CE868A1725DA0200E4B0B6 /* TimeTableViewController.h */,
 				07CE868B1725DA0200E4B0B6 /* TimeTableViewController.m */,
 				07CE86871725D90500E4B0B6 /* RootViewController.h */,
 				07CE86881725D90500E4B0B6 /* RootViewController.m */,
 				07CE86711725D7AD00E4B0B6 /* TimeAppDelegate.h */,
 				07CE86721725D7AD00E4B0B6 /* TimeAppDelegate.m */,
+				07D9044817261891006F5AE9 /* Activity.h */,
+				07D9044917261891006F5AE9 /* Activity.m */,
 				07CE867A1725D7AD00E4B0B6 /* Passion.xcdatamodeld */,
-				07CE86821725D83800E4B0B6 /* Activity.h */,
-				07CE86831725D83800E4B0B6 /* Activity.m */,
 				07CE86691725D7AD00E4B0B6 /* Supporting Files */,
 			);
 			path = Passion;
@@ -194,9 +199,10 @@
 				07CE866F1725D7AD00E4B0B6 /* main.m in Sources */,
 				07CE86731725D7AD00E4B0B6 /* TimeAppDelegate.m in Sources */,
 				07CE867C1725D7AD00E4B0B6 /* Passion.xcdatamodeld in Sources */,
-				07CE86841725D83800E4B0B6 /* Activity.m in Sources */,
 				07CE86891725D90500E4B0B6 /* RootViewController.m in Sources */,
 				07CE868C1725DA0200E4B0B6 /* TimeTableViewController.m in Sources */,
+				07D9044717260340006F5AE9 /* ActivityNameModalViewController.m in Sources */,
+				07D9044A17261891006F5AE9 /* Activity.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -311,6 +317,7 @@
 				07CE86811725D7AD00E4B0B6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

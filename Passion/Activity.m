@@ -11,8 +11,8 @@
 
 @implementation Activity
 
-@dynamic name;
 @dynamic checkInTime;
 @dynamic checkOutTime;
+@dynamic name;
 
 @end

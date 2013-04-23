@@ -10,6 +10,7 @@
 #import "TimeAppDelegate.h"
 #import "Activity.h"
 #import "TimeTableViewController.h"
+#import "ActivityNameModalViewController.h"
 
 @interface RootViewController ()
 
@@ -25,6 +26,13 @@
         newController.managedObjectContext = self.managedObjectContext;
         newController.eventsArray = [[NSArray alloc] init];
         newController.eventsArray = self.eventsArray;
+    }
+    
+    if([[segue identifier] isEqualToString:@"Choose Activity Name"]) {
+        TimeAppDelegate* appDelegate = [TimeAppDelegate sharedAppDelegate];
+        self.managedObjectContext = appDelegate.managedObjectContext;
+        ActivityNameModalViewController *newController = [segue destinationViewController];
+        newController.managedObjectContext = self.managedObjectContext;
     }
 }
 
@@ -65,11 +73,13 @@
     [self.eventsArray removeObjectAtIndex:0];
     [self.eventsArray insertObject:activity atIndex:0];
 }
+
 - (IBAction)checkInOutButtonPressed:(UIButton *)sender {
     NSDate *today = [NSDate date];
     if ([sender.currentTitle isEqualToString:@"Check In"]) {
         [self addActivityWithCheckInTime:today];
         [sender setTitle:@"Check Out" forState:UIControlStateNormal];
+        [self performSegueWithIdentifier: @"Choose Activity Name" sender: self];
     } else if ([sender.currentTitle isEqualToString:@"Check Out"]) {
         [self updateActivityWithCheckOutTime:today];
         [sender setTitle:@"Check In" forState:UIControlStateNormal];

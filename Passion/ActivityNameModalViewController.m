@@ -35,6 +35,12 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+- (BOOL)textFieldShouldReturn:(UITextField *)theTextField {
+    [theTextField resignFirstResponder];
+    return YES;
+}
+
 - (IBAction)nameButtonPressed:(UIButton *)sender {
     NSFetchRequest *request = [[NSFetchRequest alloc] init];
     NSEntityDescription *entity = [NSEntityDescription entityForName:@"Activity" inManagedObjectContext:self.managedObjectContext];

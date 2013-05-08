@@ -92,26 +92,39 @@
                                     <action selector="nameButtonPressed:" destination="wPk-gO-mFe" eventType="touchUpInside" id="WVd-vi-naZ"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name of the Activity" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qpb-QQ-x5r">
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="words" returnKeyType="done"/>
+                                <connections>
+                                    <outlet property="delegate" destination="wPk-gO-mFe" id="8DY-j8-Ra7"/>
+                                </connections>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="mS8-4O-BqD" firstAttribute="top" secondItem="rPQ-qd-ZjX" secondAttribute="top" constant="120" id="1pK-Zo-H0n"/>
-                            <constraint firstItem="kPF-tn-jSd" firstAttribute="top" secondItem="rPQ-qd-ZjX" secondAttribute="top" constant="194" id="6ob-Af-WgU"/>
                             <constraint firstItem="42H-06-yxF" firstAttribute="leading" secondItem="rPQ-qd-ZjX" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="9mt-AU-g9B"/>
                             <constraint firstItem="mS8-4O-BqD" firstAttribute="leading" secondItem="rPQ-qd-ZjX" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="A1V-BJ-2wg"/>
                             <constraint firstAttribute="trailing" secondItem="ydz-Ka-Jnc" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="Egx-cj-l59"/>
                             <constraint firstAttribute="trailing" secondItem="mS8-4O-BqD" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="Hct-hB-4nO"/>
+                            <constraint firstAttribute="trailing" secondItem="qpb-QQ-x5r" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="JDW-FJ-GPA"/>
+                            <constraint firstAttribute="bottom" secondItem="ydz-Ka-Jnc" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="Jbg-E8-EiZ"/>
+                            <constraint firstAttribute="bottom" secondItem="42H-06-yxF" secondAttribute="bottom" constant="93" id="Pg3-Dr-sw6"/>
                             <constraint firstAttribute="trailing" secondItem="Ulp-s7-Hgd" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="Vbr-Cs-dRq"/>
+                            <constraint firstItem="Ulp-s7-Hgd" firstAttribute="top" secondItem="rPQ-qd-ZjX" secondAttribute="top" constant="84" id="YBF-3L-Wat"/>
                             <constraint firstItem="Ulp-s7-Hgd" firstAttribute="leading" secondItem="rPQ-qd-ZjX" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="Z3c-7z-NYa"/>
-                            <constraint firstAttribute="bottom" secondItem="42H-06-yxF" secondAttribute="bottom" constant="132" id="ba5-Rc-gNt"/>
+                            <constraint firstItem="mS8-4O-BqD" firstAttribute="top" secondItem="rPQ-qd-ZjX" secondAttribute="top" constant="159" id="ac2-VI-7vw"/>
                             <constraint firstItem="kPF-tn-jSd" firstAttribute="leading" secondItem="rPQ-qd-ZjX" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="g4p-j2-Jya"/>
+                            <constraint firstAttribute="bottom" secondItem="kPF-tn-jSd" secondAttribute="bottom" constant="171" id="nrY-L0-YNs"/>
+                            <constraint firstItem="qpb-QQ-x5r" firstAttribute="leading" secondItem="rPQ-qd-ZjX" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="o2K-46-tOE"/>
+                            <constraint firstItem="qpb-QQ-x5r" firstAttribute="top" secondItem="rPQ-qd-ZjX" secondAttribute="top" constant="20" symbolic="YES" type="default" id="qax-e2-LeT"/>
                             <constraint firstItem="ydz-Ka-Jnc" firstAttribute="leading" secondItem="rPQ-qd-ZjX" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="seM-EX-VHD"/>
-                            <constraint firstItem="Ulp-s7-Hgd" firstAttribute="top" secondItem="rPQ-qd-ZjX" secondAttribute="top" constant="45" id="t3x-K0-WOV"/>
-                            <constraint firstAttribute="bottom" secondItem="ydz-Ka-Jnc" secondAttribute="bottom" constant="59" id="uJd-vT-O8I"/>
                             <constraint firstAttribute="trailing" secondItem="kPF-tn-jSd" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="vwA-Vo-Gs9"/>
                             <constraint firstAttribute="trailing" secondItem="42H-06-yxF" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="xTB-pa-lwC"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="textField" destination="qpb-QQ-x5r" id="fJt-ya-3mK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ck8-BP-tWt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -167,7 +180,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Z27-HI-DdK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="675" y="76"/>
+            <point key="canvasLocation" x="675" y="86"/>
         </scene>
         <!--Time Table View Controller - Activities-->
         <scene sceneID="bzQ-KV-ewU">
@@ -235,6 +248,7 @@
             <source key="sourceIdentifier" type="project" relativePath="./Classes/ActivityNameModalViewController.h"/>
             <relationships>
                 <relationship kind="action" name="nameButtonPressed:" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="textField" candidateClass="UITextField"/>
             </relationships>
         </class>
         <class className="NSLayoutConstraint" superclassName="NSObject">

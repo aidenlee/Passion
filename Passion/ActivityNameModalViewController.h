@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ActivityNameModalViewController : UIViewController
+@interface ActivityNameModalViewController : UIViewController <UITextFieldDelegate>
+@property (weak, nonatomic) IBOutlet UITextField *textField;
 @property (strong, nonatomic) NSManagedObjectContext *managedObjectContext;
 @end
